@@ -122,7 +122,7 @@ I would like to book a ${consultation.title}:
 
 Please confirm my appointment. Thank you!`
 
-      const whatsappUrl = `https://wa.me/25491674164?text=${encodeURIComponent(message)}`
+      const whatsappUrl = `https://wa.me/254791674164?text=${encodeURIComponent(message)}`
       window.open(whatsappUrl, '_blank')
     }
   }
