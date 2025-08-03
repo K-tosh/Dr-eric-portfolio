@@ -205,14 +205,14 @@ const HeroBanner = () => {
                     
                     {/* Primary CTA Button */}
                     <a 
-                      href="https://wa.me/25491674164?text=Hi%20Dr.%20Eric,%20I%20would%20like%20to%20schedule%20a%20consultation." 
+                      href="https://wa.me/254791674164?text=Hi%20Dr.%20Eric,%20I%20would%20like%20to%20schedule%20a%20consultation." 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="btn btn-primary btn-lg rounded-pill px-4 py-3"
+                      className="btn btn-primary btn-md rounded-pill px-3 py-2"
                       style={{
-                        minWidth: '220px',
-                        fontWeight: 'bold',
-                        fontSize: '16px',
+                        minWidth: '180px',
+                        fontWeight: '600',
+                        fontSize: '14px',
                         background: '#007bff',
                         border: '2px solid #007bff',
                         color: 'white',
@@ -222,7 +222,6 @@ const HeroBanner = () => {
                         justifyContent: 'center'
                       }}
                       aria-label="Schedule consultation via WhatsApp"
-                      itemProp="mainEntity"
                     >
                       <i className="icofont icofont-brand-whatsapp mr-2"></i>
                       Book Consultation
@@ -230,25 +229,24 @@ const HeroBanner = () => {
                     
                     {/* Secondary Emergency Button */}
                     <a 
-                      href="tel:+25491674164" 
-                      className="btn btn-outline-danger btn-lg rounded-pill px-4 py-3"
+                      href="tel:+254791674164" 
+                      className="btn btn-outline-danger btn-md rounded-pill px-3 py-2"
                       style={{
-                        minWidth: '220px',
-                        fontWeight: 'bold',
-                        fontSize: '16px',
+                        minWidth: '180px',
+                        fontWeight: '600',
+                        fontSize: '14px',
                         background: 'transparent',
-                        border: '2px solid #008000',
-                        color: '#008000',
+                        border: '2px solid #dc3545',
+                        color: '#dc3545',
                         textDecoration: 'none',
                         display: 'inline-flex',
                         alignItems: 'center',
                         justifyContent: 'center'
                       }}
                       aria-label="Call Dr. Eric for emergency"
-                      itemProp="telephone"
                     >
                       <i className="icofont icofont-phone mr-2"></i>
-                      Check your symptoms
+                      Emergency Call
                     </a>
                   </div>
                 </div>

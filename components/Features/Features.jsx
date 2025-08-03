@@ -32,9 +32,9 @@ const Features = () => {
       title: "Urgent Care",
       description: "24/7 emergency medical support for critical situations. We're here when you need us most.",
       buttonText: "Call Emergency",
-      buttonLink: "tel:+25491674164",
+      buttonLink: "tel:+254791674164",
       color: "danger",
-      emergencyNumber: "+254-91-674-164"
+      emergencyNumber: "+254-79-167-4164"
     }
   ]
 
@@ -150,8 +150,8 @@ const Features = () => {
                           href={feature.buttonLink}
                           target={feature.isExternal ? "_blank" : "_self"}
                           rel={feature.isExternal ? "noopener noreferrer" : ""}
-                          className={`btn btn-${feature.color} btn-lg rounded-pill font-weight-bold`}
-                          style={{minWidth: '200px'}}
+                          className={`btn btn-${feature.color} btn-md rounded-pill font-weight-bold`}
+                          style={{minWidth: '160px', fontSize: '14px', padding: '8px 16px'}}
                           aria-label={`${feature.buttonText} - ${feature.title}`}
                         >
                           {feature.color === 'success' && <i className="icofont icofont-video-cam mr-2"></i>}
@@ -205,8 +205,8 @@ const Features = () => {
                   <div className="col-12 col-sm-6 col-lg-3 mb-3 text-center">
                     <div className="service-item">
                       <i className="icofont icofont-shield-alt text-warning mb-2" style={{fontSize: '2rem'}}></i>
-                      <h6 className="font-weight-bold mb-1">Health Insurance</h6>
-                      <small className="text-muted">NHIF Accepted</small>
+                      <h6 className="font-weight-bold mb-1">Personalized IV Therapy</h6>
+                      <small className="text-muted">Tailored for Your Needs</small>
                     </div>
                   </div>
                 </div>
@@ -229,11 +229,11 @@ const Features = () => {
                 
                 <div className="d-flex flex-column flex-sm-row justify-content-center">
                   <a 
-                    href="https://wa.me/25491674164?text=Hi%20Dr.%20Eric,%20I%20need%20medical%20assistance." 
+                    href="https://wa.me/254791674164?text=Hi%20Dr.%20Eric,%20I%20need%20medical%20assistance." 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="btn btn-light btn-lg mb-2 mb-sm-0 mr-sm-3 rounded-pill font-weight-bold"
-                    style={{minWidth: '200px'}}
+                    className="btn btn-light btn-md mb-2 mb-sm-0 mr-sm-3 rounded-pill font-weight-bold"
+                    style={{minWidth: '160px', fontSize: '14px', padding: '8px 16px'}}
                     aria-label="Contact via WhatsApp"
                   >
                     <i className="icofont icofont-brand-whatsapp mr-2 text-success"></i>
@@ -241,9 +241,9 @@ const Features = () => {
                   </a>
                   
                   <a 
-                    href="tel:+25491674164" 
-                    className="btn btn-outline-light btn-lg rounded-pill font-weight-bold"
-                    style={{minWidth: '200px'}}
+                    href="tel:+254791674164" 
+                    className="btn btn-outline-light btn-md rounded-pill font-weight-bold"
+                    style={{minWidth: '160px', fontSize: '14px', padding: '8px 16px'}}
                     aria-label="Call Dr. Eric"
                   >
                     <i className="icofont icofont-phone mr-2"></i>

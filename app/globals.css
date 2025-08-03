@@ -2006,14 +2006,35 @@ a:focus {
   letter-spacing: 0.5px;
 }
 
-.contact-options {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
+/* Mobile Button Adjustments */
+@media (max-width: 576px) {
+  .btn {
+    width: 100% !important;
+    min-width: auto !important;
+    margin-bottom: 0.75rem !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
 }
 
-/* Mobile Responsiveness */
+/* Tablet Button Adjustments */
+@media (min-width: 577px) and (max-width: 768px) {
+  .btn {
+    min-width: 140px !important;
+    padding: 8px 14px !important;
+    font-size: 13px !important;
+  }
+}
+
+/* Desktop Button Adjustments */
+@media (min-width: 769px) {
+  .btn {
+    min-width: 160px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .consultation-title {
     font-size: 2rem;

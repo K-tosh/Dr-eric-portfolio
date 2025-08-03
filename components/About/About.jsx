@@ -295,17 +295,23 @@ const About = () => {
                     </a>
                     
                     <a 
-                      href="https://wa.me/25491674164" 
-                      className="btn btn-outline-success btn-lg"
-                      style={{
-                        borderRadius: '25px',
-                        fontWeight: 'bold',
-                        minWidth: '200px'
-                      }}
-                      aria-label="Contact Dr. Eric via WhatsApp"
+                      href="https://wa.me/254791674164?text=Hi%20Dr.%20Eric,%20I%20would%20like%20to%20schedule%20a%20consultation%20to%20discuss%20my%20health%20concerns." 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-md rounded-pill font-weight-bold mr-3"
+                      style={{minWidth: '160px', fontSize: '14px', padding: '8px 16px'}}
                     >
                       <i className="icofont icofont-brand-whatsapp mr-2"></i>
-                      Get in Touch
+                      Book Consultation
+                    </a>
+
+                    <a 
+                      href="tel:+254791674164" 
+                      className="btn btn-outline-primary btn-md rounded-pill font-weight-bold"
+                      style={{minWidth: '160px', fontSize: '14px', padding: '8px 16px'}}
+                    >
+                      <i className="icofont icofont-phone mr-2"></i>
+                      Call Now
                     </a>
                   </div>
                 </div>

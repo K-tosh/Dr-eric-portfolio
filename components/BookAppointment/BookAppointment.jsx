@@ -16,7 +16,7 @@ const BookAppointment = () => {
   const consultationTypes = {
     virtual: {
       title: 'Virtual Consultation',
-      price: 'KSH 3,500',
+      price: 'KSH 300',
       duration: '30-45 min',
       icon: 'icofont-video-cam',
       color: 'primary',
@@ -32,8 +32,8 @@ const BookAppointment = () => {
     },
     clinic: {
       title: 'Clinic Visit',
-      price: 'KSH 4,500',
-      duration: '45-60 min',
+      price: 'KSH 500',
+      duration: '10-15 min',
       icon: 'icofont-hospital',
       color: 'info',
       description: 'Professional consultation at our clinic'
