@@ -199,24 +199,56 @@ const HeroBanner = () => {
                 <p className="mb-4 lead text-center text-lg-left" itemProp="text">Best treatment for all your ailment is in my hands...
                 </p>
                 
+                {/* Fixed Button Container */}
                 <div className="btn-container text-center text-lg-left">
-                  <div className="d-flex flex-column flex-md-row justify-content-center justify-content-lg-start align-items-center">
+                  <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start align-items-center gap-3">
+                    
+                    {/* Primary CTA Button */}
                     <a 
-                      href="appoinment.html" 
+                      href="https://wa.me/25491674164?text=Hi%20Dr.%20Eric,%20I%20would%20like%20to%20schedule%20a%20consultation." 
                       target="_blank" 
-                      className="btn btn-main-2 btn-icon btn-round-full mb-3 mb-md-0 mr-md-3 w-100 w-md-auto"
-                      aria-label="Schedule clinical consultation with Dr. Eric Musanyi"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary btn-lg rounded-pill px-4 py-3"
+                      style={{
+                        minWidth: '220px',
+                        fontWeight: 'bold',
+                        fontSize: '16px',
+                        background: '#007bff',
+                        border: '2px solid #007bff',
+                        color: 'white',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                      aria-label="Schedule consultation via WhatsApp"
                       itemProp="mainEntity"
                     >
-                      <i className="icofont icofont-ui-call mr-2"></i>Schedule Clinical Consultation
+                      <i className="icofont icofont-brand-whatsapp mr-2"></i>
+                      Book Consultation
                     </a>
+                    
+                    {/* Secondary Emergency Button */}
                     <a 
                       href="tel:+25491674164" 
-                      className="btn btn-outline-primary btn-round-full w-100 w-md-auto"
-                      aria-label="Call Dr. Eric Musanyi for emergency contact"
+                      className="btn btn-outline-danger btn-lg rounded-pill px-4 py-3"
+                      style={{
+                        minWidth: '220px',
+                        fontWeight: 'bold',
+                        fontSize: '16px',
+                        background: 'transparent',
+                        border: '2px solid #008000',
+                        color: '#008000',
+                        textDecoration: 'none',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                      }}
+                      aria-label="Call Dr. Eric for emergency"
                       itemProp="telephone"
                     >
-                      <i className="icofont icofont-phone mr-2"></i>Emergency Contact
+                      <i className="icofont icofont-phone mr-2"></i>
+                      Check your symptoms
                     </a>
                   </div>
                 </div>
@@ -224,6 +256,82 @@ const HeroBanner = () => {
             </div>
           </div>
         </div>
+
+        {/* Enhanced Button Styles */}
+        <style jsx>{`
+          .btn-container {
+            margin-top: 2rem;
+          }
+
+          .btn-container .btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+          }
+
+          .btn-container .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+          }
+
+          .btn-primary:hover {
+            background: #0056b3 !important;
+            border-color: #0056b3 !important;
+          }
+
+          .btn-outline-danger:hover {
+            background: #dc3545 !important;
+            color: white !important;
+          }
+
+          /* Mobile Responsive */
+          @media (max-width: 576px) {
+            .btn-container .d-flex {
+              flex-direction: column !important;
+              gap: 1rem !important;
+            }
+            
+            .btn-container .btn {
+              width: 100% !important;
+              min-width: auto !important;
+              margin-bottom: 1rem;
+            }
+          }
+
+          /* Tablet */
+          @media (min-width: 577px) and (max-width: 768px) {
+            .btn-container .btn {
+              min-width: 200px !important;
+            }
+          }
+
+          /* Desktop */
+          @media (min-width: 769px) {
+            .btn-container .d-flex {
+              gap: 1.5rem !important;
+            }
+          }
+
+          /* Accessibility */
+          .btn:focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+          }
+
+          /* High contrast support */
+          @media (prefers-contrast: high) {
+            .btn {
+              border-width: 3px !important;
+            }
+          }
+
+          /* Reduced motion */
+          @media (prefers-reduced-motion: reduce) {
+            .btn {
+              transition: none !important;
+              transform: none !important;
+            }
+          }
+        `}</style>
       </section>
     </>
   )
