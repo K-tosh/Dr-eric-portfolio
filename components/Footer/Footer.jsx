@@ -295,7 +295,7 @@ const Footer = () => {
                 </a>
                 
                 <a 
-                  href="https://wa.me/25491674164" 
+                  href="https://wa.me/254791674164" 
                   className="btn btn-outline-success btn-sm rounded-pill"
                   style={{minWidth: '180px'}}
                   aria-label="Contact via WhatsApp"

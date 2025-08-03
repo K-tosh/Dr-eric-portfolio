@@ -23,7 +23,7 @@ const WhatsAppFloat = () => {
     "Hi Dr. Eric! I'd like to schedule a consultation. Please let me know your availability."
   )
   
-  const whatsappURL = `https://wa.me/25491674164?text=${whatsappMessage}`
+  const whatsappURL = `https://wa.me/254791674164?text=${whatsappMessage}`
 
   return (
     <>

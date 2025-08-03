@@ -96,7 +96,7 @@ Please confirm my virtual appointment. I will join the consultation room at the 
 
 Thank you!`
 
-      const whatsappUrl = `https://wa.me/25491674164?text=${encodeURIComponent(message)}`
+      const whatsappUrl = `https://wa.me/254791674164?text=${encodeURIComponent(message)}`
       
       window.open(whatsappUrl, '_blank')
       
