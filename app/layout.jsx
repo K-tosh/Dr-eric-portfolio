@@ -3,6 +3,8 @@ import dynamic from "next/dynamic";
 import 'bootstrap/dist/css/bootstrap.css';
 import '@icon/icofont/icofont.css';
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -55,7 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/eric.ico" />
         <link rel="canonical" href="https://drericsmusanyi.co.ke" />
         <meta name="format-detection" content="telephone=no" />
         
@@ -98,6 +100,7 @@ export default function RootLayout({ children }) {
         <Footer />
         <WhatsAppFloat />
         <SmoothScroll />
+        <Analytics />
       </body>
     </html>
   );

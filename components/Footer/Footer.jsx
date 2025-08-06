@@ -324,7 +324,7 @@ const Footer = () => {
             <div className="footer-credentials text-muted small">
               <span className="mr-3">
                 <i className="icofont icofont-certificate mr-1 text-success"></i>
-                Licensed Clinical Officer
+                Licensed Clinician
               </span>
               <span>
                 <i className="icofont icofont-shield-alt mr-1 text-primary"></i>
